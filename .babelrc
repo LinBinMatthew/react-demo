@@ -1,5 +1,5 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "presets": ["@babel/preset-env", "@babel/preset-react"],  // 可以简单的把Babel Preset视为Babel Plugin的集合
   "plugins": [
     [
       "@babel/plugin-transform-runtime",
