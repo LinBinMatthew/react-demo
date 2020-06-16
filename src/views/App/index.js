@@ -14,7 +14,7 @@ class App extends React.Component {
   }
 
   onClick2() {
-    this.props.dispatch({ type: 'INCREMENT_ASYNC' })
+    this.props.dispatch({ type: 'INCREMENT_ASYNC' })  // 派发一个异步的action
   }
 
   render() {

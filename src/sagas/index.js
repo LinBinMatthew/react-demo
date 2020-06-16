@@ -8,12 +8,12 @@ import { delay } from 'redux-saga'
 import { call, put, takeEvery } from 'redux-saga/effects'
 
 export function* incrementAsync() {
-  yield delay(2000);
-  yield put({ type: 'INCREMENT' })
+  yield delay(2000);  // 进行异步操作
+  yield put({ type: 'INCREMENT' }) // 派发另外一个action从而更新store
 }
 
 export function* watchIncrementAsync() {
-  yield takeEvery('INCREMENT_ASYNC', incrementAsync)
+  yield takeEvery('INCREMENT_ASYNC', incrementAsync)  // 劫持异步action
 }
 
 /*
